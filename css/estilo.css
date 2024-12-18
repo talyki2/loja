@@ -1,0 +1,262 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+/* Asterisco = seletor universal, representa todos 
+os elementos serão afetados */
+
+
+* {
+	
+/* 
+margin: valor1 - as quatro margens terão valor1.
+margin: valor1 valor2 - margem superior e inferior terão valor1 - margem direita e esquerda terão valor2
+margin: valor1 valor2 valor3 - margem superior terá valor1 - margem direita e esquerda terão valor2 - margem inferior terá valor3.
+margin: valor1 valor2 valor3 valor4 - margens superior, direita, inferior e esquerda nesta ordem.
+	
+	
+	
+*/	
+    
+	margin: 3px 4px 2px 3px;
+	
+
+}
+
+
+body{
+
+/*Cor de fundo*/
+
+  background: #ffffff;
+  
+ 
+
+
+}
+
+
+
+
+ h1 {
+        background: rgb(238, 235, 235);
+		text-align: center;
+		color: #000000;
+		width: 100%;
+        height:4.70rem;
+        padding-top: 30px;
+		font-size: 14px;
+ }
+ 
+/*   
+p {
+
+    
+     font-family: Courier;
+     color: red;
+     font-size: 22px;
+ }
+
+*/
+
+
+/*Abaixo formatação texto da página index*/
+
+
+#bem_vindo{
+    font-family: "Anton SC", sans-serif;
+	 color: rgb(10, 10, 10);
+     font-size: 22px;
+     text-align: center;
+	 max-width: 100%;
+ }
+
+
+ #link{
+    font-family: "Anton SC", sans-serif;
+    padding-top: 38px;
+    text-align: center;
+    font-size: 18px;
+    color: #000000;
+    max-width: 100%
+
+ }
+
+ #link a{
+    color:rgb(239, 125, 12);
+    text-decoration: none;
+
+    
+ }
+ #link a:hover{
+    color: purple;
+
+ }
+
+#nota{
+     font-family: Courier;
+	 color: red;
+     font-size: 22px;
+	 
+ } 
+ 
+ #conselho{
+	 
+	 font-family: Courier;
+     color: blue;
+     font-size: 20px;
+	
+ } 
+ 
+ /*Abaixo códigos para estilação dos menus / submenus */
+ 
+/* Define a estilização para o menu principal */
+ul.menu {
+    background-color: rgb(53, 53, 52); /* Define a cor de fundo do menu principal */
+    display: flex; /* Exibe os itens do menu lado a lado */
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o espaçamento interno */
+	width: 100%;
+    margin-top: -1.10rem;    
+    
+}
+
+/* Estilização para os itens do menu principal */   
+ul.menu li.menu-item {
+    position: relative; /* Permite posicionar os submenus corretamente */
+    margin-right: 20px; /* Define o espaçamento entre os itens do menu */
+}
+
+/* Estilização para os links dos itens do menu principal */
+ul.menu li a {
+    color: rgb(255, 255, 255); /* Define a cor do texto do menu principal */
+    padding: 10px; /* Define o espaçamento interno */
+   padding-left: 3rem;
+    text-decoration: none; /* Remove a decoração de texto */
+    display: block; /* Faz com que o link ocupe a largura total do item do menu */
+   
+}
+
+/* Define o estilo dos submenus e oculta-os inicialmente */
+ul.menu li .submenu {
+    display: none; /* Esconde os submenus por padrão */
+    position: absolute; /* Permite posicionar os submenus de forma absoluta */
+    background-color: black; /* Define a cor de fundo dos submenus */
+    width: 200px; /* Define a largura dos submenus */
+    padding: 10px; /* Define o espaçamento interno dos submenus */
+    list-style: none; /* Remove os marcadores de lista */
+    top: 90%; /* Posiciona o submenu abaixo do item do menu principal */
+    left: 0; /* Alinha o submenu com o lado esquerdo do item do menu principal */
+    z-index: 2; /* Define a ordem de empilhamento, acima do conteúdo */
+}
+
+/* Mostra o submenu quando o item do menu principal é hoverado */
+ul.menu li.menu-item:hover > .submenu {
+    display: block; /* Exibe o submenu ao passar o mouse no item do menu principal */
+}
+
+/* Estilização para os itens dentro dos submenus */
+ul.submenu li {
+    display: block; /* Exibe os itens dos submenus como blocos */
+}
+
+/* Estilização para os links dentro dos submenus */
+ul.submenu li a {
+    color: white; /* Define a cor do texto dos submenus */
+    text-decoration: none; /* Remove a decoração de texto */
+}
+
+/* Adicione margens à tabela */
+        table {
+            margin: 20px;
+            border-collapse: collapse; /* Mescla as bordas da tabela */
+        }
+        th, td {
+            border: 1px solid rgb(252, 241, 241); /* Adicione bordas às células */
+            padding: 5px; /* Adicione espaço interno às células */
+        }
+
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    padding-left: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.993);
+    
+}
+
+.section p{
+    color: #000000;
+}
+
+.text {
+    flex: 1;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.image img {
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.footer-content .social-links a {
+    color: #1e90ff;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 0.9em;
+}
+
+.footer-content .social-links a:hover {
+    text-decoration: underline;
+}
+
+#iim{
+
+    width: 100%;
+    height: 650px;
+}
+
+h3{
+    font-family: "Anton SC", sans-serif;
+    color: #000000;
+    padding-left: 15px;
+    font-size: 20px;
+
+}
+p{
+    padding-left: 15px;
+    
+}
+li{
+    padding-left: 15px;
+}
+
